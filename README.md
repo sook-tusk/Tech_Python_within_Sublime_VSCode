@@ -6,7 +6,7 @@ Integrating Python with Sublime text 4 and VSCode
 If you have integrated R with sublime text 4 or VSCode (see my other repository, https://github.com/sook-tusk/Tech_Creative_Workflow_Using_R_and_Sublime), it should only involve minor configurations as your anaconda paths are already set up. This means your system is ready to send python code to editors.
 
 
-# Run Python code in Sublime
+# 1. Run Python code in Sublime
 
 ## Step 1: Install packages in Sublime Text (ST)
 Press `Ctrl+Shift+P` to bring up Command Palette and install these packages.
@@ -34,12 +34,23 @@ No need to customise.
 
 ## Step 3: Define Custom Shortcuts (key bindings)
 Access Preferences > Key Bindings. Then set a shortcut, `ctrl+alt+.` (for example) to open Terminus, which is an interactive console window to send Python code to.
+
 ```{json}
-{
-
-// =========== Python - ST4  =============
-// In Mac, replace ctrl with cmd.
-
+// =========== Mac, Python - ST4  =============
+    { "keys": ["command+option+."],
+        "caption": "Terminus: Open iPython",
+        "command": "terminus_open",
+        "args": {
+            "post_window_hooks": [
+                ["carry_file_to_pane", {"direction": "right"}]
+            ],
+// In RStudio, launch Terminal, type whereis ipython
+// to locate your path.
+            "cmd": "/Users/yourname/anaconda3/bin/ipython"
+        }
+    },
+    
+// =========== Windows, Python - ST4  =============
     { "keys": ["ctrl+alt+."],
         "caption": "Terminus: Open iPython",
         "command": "terminus_open",
@@ -53,7 +64,7 @@ Access Preferences > Key Bindings. Then set a shortcut, `ctrl+alt+.` (for exampl
 ```
 
 Just as in R, press `Ctrl+Enter` to send the code
-to Terminus (ipython to be executed in Terminus).
+to Terminus (ipython to be launched in Terminus).
 
-# Run Python code in VSCode
+# 2. Run Python code in VSCode
 To be updated
