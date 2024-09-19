@@ -10,9 +10,11 @@ If you have integrated R with sublime text 4 or VSCode (see my other repository,
 
 ## Step 1: Install packages in Sublime Text (ST)
 
-Press `Ctrl(Cmd)+Shift+P` to bring up Command Palette and install these packages. - SendCode (to help communicate ST and Terminus), and
+Press `Ctrl(Cmd)+Shift+P` to bring up Command Palette and install these packages. 
 
--   Terminus (to use as console displaying output).
+- SendCode (to help communicate ST and Terminus), and
+
+- Terminus (to use as console displaying output).
 
 ## Step 2: Configure packages in ST
 
