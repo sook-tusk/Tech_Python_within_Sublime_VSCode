@@ -9,8 +9,8 @@ If you have integrated R with sublime text 4 or VSCode (see my other repository,
 # 1. Run Python code in Sublime
 
 ## Step 1: Install packages in Sublime Text (ST)
-Press `Ctrl+Shift+P` to bring up Command Palette and install these packages.
-- SendCode (to help communicate ST and Terminal), and
+Press `Ctrl(Cmd)+Shift+P` to bring up Command Palette and install these packages.
+- SendCode (to help communicate ST and Terminus), and
 
 - Terminus (to use as console displaying output).
 
@@ -46,7 +46,7 @@ Access Preferences > Key Bindings. Then set a shortcut, `ctrl+alt+.` (for exampl
             ],
 // In RStudio, launch Terminal, type whereis ipython
 // to locate your path.
-            "cmd": "/Users/yourname/anaconda3/bin/ipython"
+         "cmd": "/Users/yourname/anaconda3/bin/ipython"
         }
     },
     
