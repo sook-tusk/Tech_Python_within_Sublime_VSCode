@@ -18,7 +18,7 @@ Press `Ctrl(Cmd)+Shift+P` to bring up Command Palette and install these packages
 
 ### SendCode
 In the user setting, paste the following.
-```{json}
+```{py}
 {
 // Mac, Linux and Windows
     "python":
@@ -35,7 +35,7 @@ No need to customise.
 ## Step 3: Define Custom Shortcuts (key bindings)
 Access Preferences > Key Bindings. Then set a shortcut, `ctrl+alt+.` (for example) to open Terminus, which is an interactive console window to send Python code to.
 
-```{json}
+```{py}
 // =========== Mac, Python - ST4  =============
     { "keys": ["command+option+."],
         "caption": "Terminus: Open iPython",
@@ -63,8 +63,9 @@ Access Preferences > Key Bindings. Then set a shortcut, `ctrl+alt+.` (for exampl
     },
 ```
 
-Just as in R, press `Ctrl+Enter` to send the code
-to Terminus (ipython to be launched in Terminus).
+Once the shortcut is set, proceed with creating a side by side view by accessing `View > Layout > Columns: 2`. Leave the cursor on the right panel where Terminus will launch. Then, launch Terminus by pressing the above shortcut  (ipython to be launched in Terminus). 
+
+This setup allows you to display your Python script file on the left and Terminus panel on the right. To run Python code in Terminus, press `Ctrl(Cmd)+Enter`. Restart Sublime Text 4 as necessary.
 
 # 2. Run Python code in VSCode
 To be updated
