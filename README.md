@@ -33,7 +33,7 @@ In the user setting, paste the following.
 No need to customise.
 
 ## Step 3: Define Custom Shortcuts (key bindings)
-Access Preferences > Key Bindings. Then set a shortcut, `ctrl+alt+.` (for example) to open Terminus, which is an interactive console window to send Python code.
+Access Preferences > Key Bindings. Then set a shortcut, `ctrl+alt+.` (for example) to open Terminus, which is an interactive console window to send Python code to.
 ```{json}
 {
 
